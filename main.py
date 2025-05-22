@@ -1,22 +1,22 @@
-class Pes:
+class Calculator:
 
-  def __init__(self, stekot,chodenie,hranie_sa):
-    self.stekot = stekot
-    self.chodenie = chodenie
-    self.hranie_sa = hranie_sa
+    def __init__(self,cislo,cislo2):
+        self.cislo = cislo
+        self.cislo2 = cislo2
 
-    def stekot(self):
-      return self.stekot
-    
-    def chodenie(self):
-      return self.chodenie
-  
-    def hranie_sa(self):
-      return self.hranie_sa
-    
-p = Pes()
-print(p.stekot())
-#output: Stekam
-print(type(p))
-#output: <class main.Pes>
-    
+
+    def plus(self):
+        vypocet = self.cislo + self.cislo2
+        return vypocet
+
+    def minus(self):
+        vypocet = self.cislo-self.cislo2
+        return vypocet
+
+    def krat(self):
+        vypocet = self.cislo*self.cislo2
+        return vypocet
+
+    def delenie(self):
+        vypocet = self.cislo/self.cislo2
+        return vypocet
